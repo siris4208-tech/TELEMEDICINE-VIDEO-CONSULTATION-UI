@@ -6,6 +6,8 @@ import AboutPage   from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import LoginPage   from "./pages/LoginPage";
 import SignupPage  from "./pages/SignupPage";
+import SymptomsPage from "./pages/SymptomsPage";
+import PrescriptionPage from "./pages/PrescriptionPage";
 
 // ── Import shared components
 import Navbar from "./components/Navbar";
@@ -48,6 +50,8 @@ export default function App() {
       case "contact": return <ContactPage setPage={navigate} />;
       case "login":   return <LoginPage   setPage={navigate} />;
       case "signup":  return <SignupPage  setPage={navigate} />;
+      case "symptoms":return <SymptomsPage setPage={navigate} />;
+      case "prescription":return <PrescriptionPage setPage={navigate} />;
       default:        return <HomePage    setPage={navigate} />;
     }
   };

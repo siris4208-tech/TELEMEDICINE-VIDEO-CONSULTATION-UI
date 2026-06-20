@@ -6,6 +6,8 @@ export default function Navbar({ currentPage, setPage }) {
   const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About Us" },
+     { id: "symptoms", label: "Symptoms" },
+  { id: "prescription", label: "Prescription" },
     { id: "contact", label: "Contact Us" },
   ];
 
